@@ -48,7 +48,7 @@ ol {
 
 .page {
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   justify-content: center;
   padding: 133px 30px;
   inline-size: 1200px;
