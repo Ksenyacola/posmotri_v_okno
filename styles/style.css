@@ -4,11 +4,25 @@
   box-sizing: border-box;
 }
 
+.visually-hidden {
+  position: absolute;
+  inline-size: 1px;
+  block-size: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
 html {
   block-size: 100%;
 }
 
 .page {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 133px 30px;
   inline-size: 1200px;
   block-size: 100%;
   margin: auto;
@@ -35,4 +49,216 @@ fieldset {
 ul,
 ol {
   list-style: none;
+}
+
+.button {
+  cursor: pointer;
+  color: #FFF;
+  text-align: center;
+  font-family: Fira Sans Condensed;
+  background-color: transparent;
+  border: 1px solid #FFF;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.button:hover {
+  text-decoration: underline;
+}
+
+.button:active {
+  background-color: #545050;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 30px;
+}
+
+.result__video-container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  margin-bottom: 16px;
+}
+
+.result__video {
+  width: 100%;
+}
+
+.search-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.search-form__fieldset-title {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.title {
+  color: #FFF;
+  font-family: Oswald;
+  font-size: 75px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 94%;
+  text-transform: uppercase;
+}
+
+.content__details {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+}
+
+.content__accent {
+  color: #545050;
+}
+
+.content__list {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 35px;
+  height: 298px;
+  overflow-y: scroll;
+}
+
+.content__video-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 103px;
+  width: 394px;
+}
+
+.content__video-card-thumbnail {
+  width: 194px;
+  height: 103px;
+}
+
+.content__video-card-description-container {
+  width: fit-content;
+  gap: 6px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.content__card-link {
+  text-decoration: none;
+}
+
+.content__video-card-title {
+  color: #FFF;
+  font-family: Oswald;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%;
+  text-transform: uppercase;
+}
+
+.content__video-card-description {
+  color: #FFF;
+  font-family: Fira Sans Condensed;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16.2px;
+}
+
+.result {
+  width: 711px;
+}
+
+.search-form__fieldset {
+  border: none;
+}
+
+.result__video:focus {
+  outline: 1px solid #fff;
+}
+
+.search-form__textfield:focus {
+  outline: 1px solid #fff;
+}
+
+.search-form__label:focus-within {
+  outline: 1px solid #fff;
+}
+
+.search-form__submit-button:focus {
+  outline: 1px solid #fff;
+}
+
+.search-form__textfield {
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.70);
+  font-family: Fira Sans Condensed;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border-top: 1px solid #FFF;
+  border-bottom: 1px solid #FFF;
+  width: 225px;
+}
+
+input {
+  border: none;
+}
+
+.search-form__label-text:hover {
+  text-decoration: underline;
+}
+
+.search-form__submit-button {
+  margin: 14px -1px 1px 42px;
+  padding: 6px 73.5px;
+}
+
+.search-form__checkbox-list {
+  margin-left: 27px;
+}
+
+.search-form__pseudo-checkbox {
+  display: inline-block;
+  width: 19px;
+  height: 19px;
+  border: 2px solid #fff;
+  background-color: transparent;
+  position: relative;
+  vertical-align: middle;
+  margin-right: 6px;
+  cursor: pointer;
+}
+
+.search-form__checkbox:checked + .search-form__pseudo-checkbox::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  width: 13px;
+  height: 13px;
+  background-color: #fff;
+}
+
+.more-button {
+display: flex;
+width: 399px;
+height: 34px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+border: 1px solid #FFF;
+color: #fff;
+background-color: transparent;
 }
