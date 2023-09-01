@@ -97,9 +97,9 @@ ol {
 }
 
 .search-form {
-  display: grid;
-  grid-template-columns: max-content max-content max-content;
-  margin-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
 }
 
 .search-form__label:focus {
@@ -123,6 +123,7 @@ ol {
 .search-form__checkbox-list {
   display: inline-flex;
   gap: 12px;
+  padding-bottom: 5px;
 }
 
 .search-form__fieldset {
@@ -179,14 +180,9 @@ ol {
   background-color: #fff;
 }
 
-.search-form__fieldset-center {
-  padding-left: 40px;
-  cursor: pointer;
-}
 
 .search-form__submit-button {
-  margin: 20px 0 -3px 38px;
-  padding: 6px 73.5px;
+  padding: 5px 73px;
 }
 
 .button {
