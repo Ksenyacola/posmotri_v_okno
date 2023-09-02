@@ -242,16 +242,6 @@ ol {
   overflow-x: hidden;
 }
 
-/* скрыла скролл-бар*/
-.content__list::-webkit-scrollbar {
-  display: none;
-}
-
-.content__list {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-}
-
 .title {
   color: #fff;
   font-family: Oswald, sans-serif;
